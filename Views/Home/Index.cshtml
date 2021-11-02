@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4" id="homeTitle">Katzavia</h1>
+</div>
+
+@*Choosing the department that the user needs*@
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <p><img src="~/Images/Beef-Meat.png" style=" height:250px;width:450px;" /></p>
+                <h5 class="card-title">מידע על הנתחים שלנו</h5>
+                <a asp-controller="Products" asp-action="Index" class="btn btn-primary">לחץ כאן</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <p><img src="~/Images/events.jpg" style=" height:250px;width:450px;" /></p>
+                <h5 class="card-title">לקביעת אירוע</h5>
+                <a asp-controller="Events" asp-action="Create" class="btn btn-primary">לחץ כאן</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p><br /></p>
+
+<div class="text-center">
+    <h3 class="display-4">עלינו</h3>
+    <h5 class="text-center">
+        ברוך הבא לקצביית המכללה למנהל !
+    </h5>
+    <h5 class="text-center">
+        כאן תוכלו להינות ממגוון נתחים טריים ומשובחים לבחירתכם !
+    </h5>
+    <h5 class="text-center">
+        כלל הבשר שלנו הינו בשר טרי ומאושר ע"י הרבנות הארצית !
+    </h5>
+    <h5 class="text-center">
+        אז מאחלים לכם הנאה מרבית וכמובן אם נהנתם ספרו לחבריכם,לא נהנתם? ספרו לנו !
+    </h5>
+</div>
