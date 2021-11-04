@@ -21,7 +21,5 @@ namespace Katzavia.Data
         public DbSet<Katzavia.Models.Category> Category { get; set; }
 
         public DbSet<Katzavia.Models.Tags> Tags { get; set; }
-
-        public DbSet<Katzavia.Models.Events> Events { get; set; }
     }
 }
