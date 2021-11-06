@@ -24,6 +24,37 @@ namespace Katzavia.Controllers
         {
             _context = context;
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        // POST: Users/Login
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Login([Bind("Id,Username,Email,Password")] User user)
+        {
+            if (ModelState.IsValid)
+            {
+                var q = from u in _context.User
+                        where u.Username == user.Username && u.Password == user.Password
+                        select u;
+                //var q = _context.User.FirstOrDefault(u => u.Username == user.Username && u.Password == user.Password);
+                if (q.Count() > 0)
+                {
+                    //HttpContext.Session.SetString("Username", q.First().Username);
+                    Signin(q.First());
+                    return RedirectToAction(nameof(Index), "Home");
+                }
+                else
+                {
+                    ViewData["Error"] = "Wrong username or password.";
+                }
+            }
+            return View(user);
+        }
 
         public IActionResult Register()
         {
@@ -139,7 +170,7 @@ namespace Katzavia.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Username,Password,Type,Product")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Username,Password,Type")] User user)
         {
             if (id != user.Id)
             {
@@ -204,6 +235,13 @@ namespace Katzavia.Controllers
         {
             return _context.User.Any(e => e.Id == id);
         }
+    }
+    public class UserJoin
+    {
+        public User u { get; set; }
+        public UserInfo ui { get; set; }
+
+        public UserJoin(User u, UserInfo ui) { this.u = u; this.ui = ui; }
     }
 
     public class Stat

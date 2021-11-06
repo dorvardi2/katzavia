@@ -33,6 +33,43 @@ namespace Katzavia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Category");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Williamaaa"
+                        });
+                });
+
+            modelBuilder.Entity("Katzavia.Models.Events", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Desc")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EventType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Events");
                 });
 
             modelBuilder.Entity("Katzavia.Models.Product", b =>
@@ -70,6 +107,17 @@ namespace Katzavia.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            Desc = "sss",
+                            Image = "http://ssss.com",
+                            Name = "William",
+                            Price = 6.0
+                        });
                 });
 
             modelBuilder.Entity("Katzavia.Models.Tags", b =>
@@ -85,6 +133,13 @@ namespace Katzavia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tags");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "William"
+                        });
                 });
 
             modelBuilder.Entity("Katzavia.Models.User", b =>
@@ -110,6 +165,16 @@ namespace Katzavia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "aaa@aaa.com",
+                            Password = "123456",
+                            Type = 1,
+                            Username = "William"
+                        });
                 });
 
             modelBuilder.Entity("ProductTags", b =>
