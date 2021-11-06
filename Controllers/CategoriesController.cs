@@ -48,7 +48,7 @@ namespace Katzavia.Controllers
         // GET: Categories/Create
         public IActionResult Create()
         {
-            //ViewData["Productss"] = new SelectList(_context.Product.Where(x => x.CategoryId == null), nameof(Product.Id), nameof(Product.Name));
+            ViewData["ProductData"] = new SelectList(_context.Product.Where(x => x.CategoryId == null), nameof(Product.Id), nameof(Product.Name));
             return View();
         }
 
@@ -84,7 +84,7 @@ namespace Katzavia.Controllers
             {
                 return NotFound();
             }
-            //ViewData["Productss"] = new SelectList(_context.Product, nameof(Product.Id), nameof(Product.Name));
+            ViewData["ProductData"] = new SelectList(_context.Product, nameof(Product.Id), nameof(Product.Name));
             return View(category);
         }
 
