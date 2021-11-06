@@ -12,7 +12,9 @@ namespace Katzavia.Data
         public KatzaviaContext(DbContextOptions<KatzaviaContext> options)
             : base(options)
         {
+           
         }
+        
 
         public DbSet<Katzavia.Models.User> User { get; set; }
 

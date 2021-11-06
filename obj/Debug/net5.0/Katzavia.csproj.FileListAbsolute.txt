@@ -619,3 +619,8 @@ C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Users\
 C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Users\Join.cshtml.g.cs
 C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Users\Login.cshtml.g.cs
 C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Users\Register.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Categories\Delete.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
