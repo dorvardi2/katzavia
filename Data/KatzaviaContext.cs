@@ -32,7 +32,7 @@ namespace Katzavia.Data
                 new User
                 {
                     Id = 6,
-                    Username = "William6",
+                    Username = "Admin",
                     Email = "aaa@aaa.com",
                     Password = "123456",
                     Type = UserType.Admin
@@ -43,18 +43,47 @@ namespace Katzavia.Data
                 new Tags
                 {
                     Id = 1,
-                    Name = "William",
+                    Name = "טרי",
                     myProducts = {}
+                }
+            );
+            modelBuilder.Entity<Tags>().HasData(
+                new Tags
+                {
+                    Id = 2,
+                    Name = "קפוא",
+                    myProducts = { }
                 }
             );
             modelBuilder.Entity<Category>().HasData(
                 new Category
                 {
                     Id = 1,
-                    Name = "Williamaaa",
+                    Name = "פרה",
                     myProducts = { }
                 }
             );
+            modelBuilder.Entity<Category>().HasData(
+                new Category
+                {
+                    Id = 2,
+                    Name = "כבש",
+                    myProducts = { }
+                }
+            );
+            modelBuilder.Entity<Product>().HasData(
+               new Product
+               {
+                   Id = 1,
+                   Name = "שוקיים",
+                   Image = "https://www.israelhayom.co.il/sites/default/files/styles/566x349/public/images/articles/2019/10/01/15699621369034_b.jpg",
+                   Price = 6.0,
+                   Desc = "נתח שוק טרי מהגולן",
+                   myTags = { },
+                   Category = { },
+                   CategoryId = 1
+               }
+           );
         }
     }
 }

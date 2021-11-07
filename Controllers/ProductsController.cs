@@ -76,8 +76,8 @@ namespace Katzavia.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
-            ViewData["Categoriess"] = new SelectList(_context.Category, nameof(Category.Id), nameof(Category.Name));
-            ViewData["Tagss"] = new SelectList(_context.Tags, nameof(Tags.Id), nameof(Tags.Name));
+            ViewData["CategoryId"] = new SelectList(_context.Category, nameof(Category.Id), nameof(Category.Name));
+            ViewData["Tags"] = new SelectList(_context.Tags, nameof(Tags.Id), nameof(Tags.Name));
 
             return View();
         }
