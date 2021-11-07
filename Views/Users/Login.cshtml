@@ -10,15 +10,18 @@
         <h1>Login</h1>
         <form asp-action="Login">
 
-            <input asp-for="Username" class="form-control" placeholder="Username" />
-            <input asp-for="Password" class="form-control" placeholder="Password" />
-            <input type="submit" value="Login" class="btn btn-primary" />
 
-            <div>
+                <input asp-for="Username" class="form-control" placeholder="Username" />
                 <br />
-                Not part of the family ?<br />
-                <a asp-action="Register">Click here</a> to join.
-            </div>
+                <input asp-for="Password" class="form-control" placeholder="Password" />
+                <br />
+                <input type="submit" value="Login" class="btn btn-primary" />
+
+                <div>
+                    <br />
+                    Not part of the family ?<br />
+                    <a asp-action="Register">Click here</a> to join.
+                </div>
 
         </form>
 
