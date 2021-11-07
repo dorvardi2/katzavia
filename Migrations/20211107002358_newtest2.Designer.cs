@@ -4,14 +4,16 @@ using Katzavia.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Katzavia.Migrations
 {
     [DbContext(typeof(KatzaviaContext))]
-    partial class KatzaviaContextModelSnapshot : ModelSnapshot
+    [Migration("20211107002358_newtest2")]
+    partial class newtest2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -159,11 +161,11 @@ namespace Katzavia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 6,
+                            Id = 1,
                             Email = "aaa@aaa.com",
                             Password = "123456",
                             Type = 1,
-                            Username = "William6"
+                            Username = "William"
                         });
                 });
 

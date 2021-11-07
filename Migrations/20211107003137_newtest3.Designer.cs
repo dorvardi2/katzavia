@@ -4,14 +4,16 @@ using Katzavia.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Katzavia.Migrations
 {
     [DbContext(typeof(KatzaviaContext))]
-    partial class KatzaviaContextModelSnapshot : ModelSnapshot
+    [Migration("20211107003137_newtest3")]
+    partial class newtest3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -12,7 +12,7 @@ namespace Katzavia.Data
         public KatzaviaContext(DbContextOptions<KatzaviaContext> options)
             : base(options)
         {
-           
+            //Console.WriteLine("called");
         }
         
 
@@ -24,29 +24,21 @@ namespace Katzavia.Data
 
         public DbSet<Katzavia.Models.Tags> Tags { get; set; }
         public DbSet<Katzavia.Models.Events> Events { get; set; }
+    
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().HasData(
                 new User
                 {
-                    Id = 1,
-                    Username = "William",
+                    Id = 6,
+                    Username = "William6",
                     Email = "aaa@aaa.com",
                     Password = "123456",
                     Type = UserType.Admin
                 }
             );
-            modelBuilder.Entity<Product>().HasData(
-                new Product
-                {
-                    Id = 1,
-                    Name = "William",
-                    Desc = "sss",
-                    Price = 6,
-                    Image = ""
-                }
-            );
+
             modelBuilder.Entity<Tags>().HasData(
                 new Tags
                 {

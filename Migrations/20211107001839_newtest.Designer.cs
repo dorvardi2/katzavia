@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Katzavia.Migrations
 {
     [DbContext(typeof(KatzaviaContext))]
-    [Migration("20211106132342_eden2")]
-    partial class eden2
+    [Migration("20211107001839_newtest")]
+    partial class newtest
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,6 +35,13 @@ namespace Katzavia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Category");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Williamaaa"
+                        });
                 });
 
             modelBuilder.Entity("Katzavia.Models.Events", b =>
@@ -102,6 +109,17 @@ namespace Katzavia.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Product");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 0,
+                            Desc = "sss",
+                            Image = "",
+                            Name = "William",
+                            Price = 6.0
+                        });
                 });
 
             modelBuilder.Entity("Katzavia.Models.Tags", b =>
@@ -117,6 +135,13 @@ namespace Katzavia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tags");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "William"
+                        });
                 });
 
             modelBuilder.Entity("Katzavia.Models.User", b =>
@@ -137,11 +162,49 @@ namespace Katzavia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Email = "aaa@aaa.com",
+                            Password = "123456",
+                            Type = 1,
+                            Username = "William"
+                        });
+                });
+
+            modelBuilder.Entity("Katzavia.Models.UserInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("UserInfo");
                 });
 
             modelBuilder.Entity("ProductTags", b =>
@@ -176,6 +239,17 @@ namespace Katzavia.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Katzavia.Models.UserInfo", b =>
+                {
+                    b.HasOne("Katzavia.Models.User", "User")
+                        .WithOne("UserInfo")
+                        .HasForeignKey("Katzavia.Models.UserInfo", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ProductTags", b =>
                 {
                     b.HasOne("Katzavia.Models.Product", null)
@@ -194,6 +268,11 @@ namespace Katzavia.Migrations
             modelBuilder.Entity("Katzavia.Models.Category", b =>
                 {
                     b.Navigation("myProducts");
+                });
+
+            modelBuilder.Entity("Katzavia.Models.User", b =>
+                {
+                    b.Navigation("UserInfo");
                 });
 #pragma warning restore 612, 618
         }
