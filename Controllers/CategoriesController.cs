@@ -22,9 +22,15 @@ namespace Katzavia.Controllers
         }
 
         // GET: Categories
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String SearchString)
         {
-            return View(await _context.Category.ToListAsync());
+            var category1 = from f in _context.Category
+                            select f;
+            if (!String.IsNullOrEmpty(SearchString))
+            {
+                category1 = (category1.Where(s => s.Name.Contains(SearchString)));
+            }
+            return View(await category1.ToListAsync());
         }
 
         // GET: Categories/Details/5

@@ -125,11 +125,22 @@ namespace Katzavia.Controllers
 
         // GET: Users
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(String SearchStringUserName, UserType SearchTypeName)
         {
-            return View(await _context.User.ToListAsync());
+            var User1 = from f in _context.User
+                        select f;
+            if (!String.IsNullOrEmpty(SearchStringUserName))
+            {
+                User1 = (User1.Where((s => s.Username.Contains(SearchStringUserName))));
+
+            }
+
+
+            User1 = (User1.Where((s => s.Type.Equals(SearchTypeName))));
+
+
+            return View(await User1.ToListAsync());
         }
-        
         // GET: Users/Details/5
         public async Task<IActionResult> Details(int? id)
         {
