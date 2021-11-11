@@ -125,7 +125,7 @@ namespace Katzavia.Controllers
 
         // GET: Users
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Index(String SearchStringUserName, UserType SearchTypeName)
+        public async Task<IActionResult> Index(String SearchStringUserName, String SearchTypeName)
         {
             var User1 = from f in _context.User
                         select f;
@@ -134,9 +134,20 @@ namespace Katzavia.Controllers
                 User1 = (User1.Where((s => s.Username.Contains(SearchStringUserName))));
 
             }
+            UserType user_to_search;
+            if (SearchTypeName != null)
+            {
+                if (SearchTypeName == "0" || SearchTypeName == "Admin")
+                {
+                    user_to_search = UserType.Admin;
+                }
+                else
+                {
+                    user_to_search = UserType.Client;
+                }
+                User1 = (User1.Where((s => s.Type.Equals(user_to_search))));
+            }
 
-
-            User1 = (User1.Where((s => s.Type.Equals(SearchTypeName))));
 
 
             return View(await User1.ToListAsync());

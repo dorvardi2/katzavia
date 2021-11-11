@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Katzavia.Migrations
 {
     [DbContext(typeof(KatzaviaContext))]
-    [Migration("20211107001839_newtest")]
-    partial class newtest
+    [Migration("20211111162727_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,7 +40,12 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Williamaaa"
+                            Name = "פרה"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "כבש"
                         });
                 });
 
@@ -114,11 +119,11 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryId = 0,
-                            Desc = "sss",
-                            Image = "",
-                            Name = "William",
-                            Price = 6.0
+                            CategoryId = 1,
+                            Desc = "נתח שוק טרי מהגולן!",
+                            Image = "https://www.israelhayom.co.il/sites/default/files/styles/566x349/public/images/articles/2019/10/01/15699621369034_b.jpg",
+                            Name = "שוקיים",
+                            Price = 7.0
                         });
                 });
 
@@ -140,7 +145,12 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "William"
+                            Name = "טרי"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "קפוא"
                         });
                 });
 
@@ -172,11 +182,11 @@ namespace Katzavia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = 7,
                             Email = "aaa@aaa.com",
                             Password = "123456",
                             Type = 1,
-                            Username = "William"
+                            Username = "Admin"
                         });
                 });
 

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Katzavia.Migrations
 {
     [DbContext(typeof(KatzaviaContext))]
-    [Migration("20211106155514_eden4")]
-    partial class eden4
+    [Migration("20211111164224_Initial2")]
+    partial class Initial2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -40,7 +40,12 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Williamaaa"
+                            Name = "פרה"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "כבש"
                         });
                 });
 
@@ -114,11 +119,92 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            CategoryId = 0,
-                            Desc = "sss",
-                            Image = "",
-                            Name = "William",
-                            Price = 6.0
+                            CategoryId = 1,
+                            Desc = "  שניצל דק מהמשק לצרכן, מהמשק לצרכן",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/0a8c59b4-750d-11eb-9ca0-22bcbb5f5130_chickenschnitzel.001.jpeg",
+                            Name = "שניצל דק ללא אנטיביוטיקה",
+                            Price = 55.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            Desc = "  עוף מעולה שגדל במשק כפרי ויגרום לכם להרגיש אירופה",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/03a06f58-750f-11eb-a1bf-e2c2878d6758_chicken_quarter.001.jpeg",
+                            Name = "כריים עוף ללא אנטיביוטיקה",
+                            Price = 55.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            Desc = "  כבד עוף טחון שנטחן באהבה",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/a0c5e4dc-767e-11eb-8e1a-1e4144159da5_chicken_liver.001.jpeg",
+                            Name = "כבד עוף טחון",
+                            Price = 29.0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 1,
+                            Desc = "  עוף טחון שגודל במשק כפרי ומעניק לארוחה נינוח אירופאי",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/6005573773650cccaa260b6d/d41fc3ba-63a6-11eb-9a11-f204402e8831_ground_chicken.001.jpeg",
+                            Name = "עוף טחון",
+                            Price = 25.0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 1,
+                            Desc = "שוקיים יפים של עוף יפה",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/6005573773650cccaa260b6d/2204ad7a-63a7-11eb-98ce-c66654228715_chicken_leg.001.jpeg",
+                            Name = "שוקיים עוף",
+                            Price = 47.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoryId = 2,
+                            Desc = " בשר שנטחן במקום במכונה מיוחדת ומתאים לכל אוהב בשרים",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/6005573773650cccaa260b6d/86f6c36c-63a7-11eb-b059-8e95cfb0afa3_groundbeef.002.jpeg",
+                            Name = "בשר טחון",
+                            Price = 39.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryId = 2,
+                            Desc = "סינטה איכותית, שמתאימה רק לאנשים יוקרתיים",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/6005573773650cccaa260b6d/86f6c36c-63a7-11eb-b059-8e95cfb0afa3_groundbeef.002.jpeg",
+                            Name = "מארז סינטה פרוסה (800 גרם)",
+                            Price = 159.0
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoryId = 2,
+                            Desc = "גולש איכותי שארוז היטב כדי לייצר ארוחה בנינוח חמים",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/af12e5da-7516-11eb-8259-7e368d1a5f1e_beefbites.001__1_.jpeg",
+                            Name = "מארז קוביות לבישול גולש (800 גרם)",
+                            Price = 89.0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CategoryId = 2,
+                            Desc = "אסאדו ארגינטאי שמחזיר אתכם לדרום אמריקה",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/6005573773650cccaa260b6d/ef0a04d8-63ab-11eb-ba0c-16593b832e51_short_ribs.001.jpeg",
+                            Name = "אסאדו (1 ק",
+                            Price = 99.0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CategoryId = 2,
+                            Desc = "צלי כתף איכותי מרמת הגולן!",
+                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/0b82f486-7517-11eb-be52-d2b6ff40ab95_beef_soulder.001__2_.jpeg",
+                            Name = "צלי כתף (900 גרם)",
+                            Price = 116.0
                         });
                 });
 
@@ -140,7 +226,12 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "William"
+                            Name = "טרי"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "קפוא"
                         });
                 });
 
@@ -162,6 +253,7 @@ namespace Katzavia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -171,12 +263,39 @@ namespace Katzavia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 1,
+                            Id = 7,
                             Email = "aaa@aaa.com",
                             Password = "123456",
                             Type = 1,
-                            Username = "William"
+                            Username = "Admin"
                         });
+                });
+
+            modelBuilder.Entity("Katzavia.Models.UserInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Number")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("UserInfo");
                 });
 
             modelBuilder.Entity("ProductTags", b =>
@@ -211,6 +330,17 @@ namespace Katzavia.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Katzavia.Models.UserInfo", b =>
+                {
+                    b.HasOne("Katzavia.Models.User", "User")
+                        .WithOne("UserInfo")
+                        .HasForeignKey("Katzavia.Models.UserInfo", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ProductTags", b =>
                 {
                     b.HasOne("Katzavia.Models.Product", null)
@@ -229,6 +359,11 @@ namespace Katzavia.Migrations
             modelBuilder.Entity("Katzavia.Models.Category", b =>
                 {
                     b.Navigation("myProducts");
+                });
+
+            modelBuilder.Entity("Katzavia.Models.User", b =>
+                {
+                    b.Navigation("UserInfo");
                 });
 #pragma warning restore 612, 618
         }
