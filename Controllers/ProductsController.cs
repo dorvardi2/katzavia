@@ -22,7 +22,7 @@ namespace Katzavia.Controllers
         }
 
         // GET: Products
-        [Authorize(Roles = "Admin")]
+      //  [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var KatzaviaContext = _context.Product.Include(c => c.Category);

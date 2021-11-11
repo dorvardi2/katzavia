@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\עדן בוקרה אהובתי\\Documents\\GitHub\\katzavia\\Katzavia.csproj": {}
+    "C:\\Users\\dorva\\Desktop\\OurProject-master (2)\\katzavia\\katzavia\\Katzavia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\עדן בוקרה אהובתי\\Documents\\GitHub\\katzavia\\Katzavia.csproj": {
+    "C:\\Users\\dorva\\Desktop\\OurProject-master (2)\\katzavia\\katzavia\\Katzavia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\עדן בוקרה אהובתי\\Documents\\GitHub\\katzavia\\Katzavia.csproj",
+        "projectUniqueName": "C:\\Users\\dorva\\Desktop\\OurProject-master (2)\\katzavia\\katzavia\\Katzavia.csproj",
         "projectName": "Katzavia",
-        "projectPath": "C:\\Users\\עדן בוקרה אהובתי\\Documents\\GitHub\\katzavia\\Katzavia.csproj",
-        "packagesPath": "C:\\Users\\עדן בוקרה אהובתי\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\עדן בוקרה אהובתי\\Documents\\GitHub\\katzavia\\obj\\",
+        "projectPath": "C:\\Users\\dorva\\Desktop\\OurProject-master (2)\\katzavia\\katzavia\\Katzavia.csproj",
+        "packagesPath": "C:\\Users\\dorva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dorva\\Desktop\\OurProject-master (2)\\katzavia\\katzavia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\עדן בוקרה אהובתי\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dorva\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
