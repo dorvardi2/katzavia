@@ -48,7 +48,7 @@ namespace Katzavia.Controllers
         // GET: Tags/Create
         public IActionResult Create()
         {
-            //ViewData["Productss"] = new SelectList(_context.Product, nameof(Product.Id), nameof(Product.Name));
+            ViewData["Productss"] = new SelectList(_context.Product, nameof(Product.Id), nameof(Product.Name));
             return View();
         }
 
@@ -83,7 +83,7 @@ namespace Katzavia.Controllers
             {
                 return NotFound();
             }
-            ViewData["Productss"] = new SelectList(_context.Product, nameof(Product.Id), nameof(Product.Name));
+            ViewData["Products"] = new SelectList(_context.Product, nameof(Product.Id), nameof(Product.Name));
             return View(tags);
         }
 
