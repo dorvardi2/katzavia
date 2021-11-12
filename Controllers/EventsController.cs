@@ -60,7 +60,7 @@ namespace Katzavia.Controllers
             {
                 _context.Add(events);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("index", "Home");
             }
             return View(events);
         }
