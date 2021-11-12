@@ -22,7 +22,7 @@ namespace Katzavia.Controllers
         }
 
         // GET: Products
-      //  [Authorize(Roles = "Admin")]
+        //  [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             var KatzaviaContext = _context.Product.Include(c => c.Category);
@@ -115,8 +115,8 @@ namespace Katzavia.Controllers
             {
                 return NotFound();
             }
-            ViewData["Categoriess"] = new SelectList(_context.Category, nameof(Category.Id), nameof(Category.Name));
-            ViewData["Tagss"] = new SelectList(_context.Tags, nameof(Tags.Id), nameof(Tags.Name));
+            ViewData["CategoryId"] = new SelectList(_context.Category, nameof(Category.Id), nameof(Category.Name));
+            ViewData["Tags"] = new SelectList(_context.Tags, nameof(Tags.Id), nameof(Tags.Name));
             return View(product);
         }
 
