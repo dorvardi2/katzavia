@@ -1524,3 +1524,4 @@ C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.
 C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Details.cshtml.g.cs
 C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Edit.cshtml.g.cs
 C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Index.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Events\Succses.cshtml.g.cs

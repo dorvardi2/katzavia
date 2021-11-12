@@ -1,0 +1,22 @@
+﻿@model Katzavia.Models.Events
+
+@{
+    ViewData["Title"] = "Succses";
+}
+
+<br>
+<h1>Thank you about your ....</h1>
+
+<h1>you will....</h1>
+
+<script>
+  setTimeout(function () {
+        window.location.replace('@Url.Action("Index", "Home")')
+    }, 4000);
+
+</script>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
