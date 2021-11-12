@@ -4,14 +4,16 @@ using Katzavia.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Katzavia.Migrations
 {
     [DbContext(typeof(KatzaviaContext))]
-    partial class KatzaviaContextModelSnapshot : ModelSnapshot
+    [Migration("20211112070104_up")]
+    partial class up
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -38,22 +40,17 @@ namespace Katzavia.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "עופות טריים"
+                            Name = "פרה"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "בשר בקר טרי"
+                            Name = "כבש"
                         },
                         new
                         {
                             Id = 3,
                             Name = "קפואים"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "מזווה"
                         });
                 });
 
@@ -258,51 +255,6 @@ namespace Katzavia.Migrations
                             Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/75ebeef8-7680-11eb-86c6-ee36a0dc7fdc_kebab.007.jpeg",
                             Name = "מארז קבבוני אנטריקוט (15 יחידות)",
                             Price = 75.0
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CategoryId = 4,
-                            Desc = "חרדל דיז'ון צרפתי היישר מפריז הרחוקה",
-                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/a277f7fc-7b51-11eb-8ca8-aaf19c238eb9_______.014.jpeg",
-                            Name = "חרדל דיז'ון חלק",
-                            Price = 13.0
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CategoryId = 4,
-                            Desc = "מחית עגבניות מתקתק למנגל מושלם",
-                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/136039ac-7b52-11eb-8d85-6ea0a7595342_______.020.jpeg",
-                            Name = "מחית עגבניות",
-                            Price = 16.0
-                        },
-                        new
-                        {
-                            Id = 18,
-                            CategoryId = 4,
-                            Desc = "רוטב חריף בסגנון מקסיקו",
-                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/69965ff4-7b52-11eb-9b3a-564c812693f5_______.024.jpeg",
-                            Name = "רוטב חריף סרירצ'ה",
-                            Price = 40.0
-                        },
-                        new
-                        {
-                            Id = 19,
-                            CategoryId = 4,
-                            Desc = "לחמניות עגולות להמבורגר",
-                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/7aba352e-7bf4-11eb-9865-e28c87392c16_hamburgerbun.001.jpeg",
-                            Name = "לחמניות המבורגר",
-                            Price = 18.0
-                        },
-                        new
-                        {
-                            Id = 20,
-                            CategoryId = 4,
-                            Desc = "רוטב טבסקו חריף ומטריף",
-                            Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/e4444560-7b50-11eb-9911-aaf19c238eb9_______.001.jpeg",
-                            Name = "רוטב טבסקו",
-                            Price = 17.0
                         });
                 });
 

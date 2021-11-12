@@ -89,7 +89,7 @@ namespace Katzavia.Data
                 new Category
                 {
                     Id = 1,
-                    Name = "פרה",
+                    Name = "עופות טריים",
                     myProducts = { }
                 }
             );
@@ -97,7 +97,7 @@ namespace Katzavia.Data
                 new Category
                 {
                     Id = 2,
-                    Name = "כבש",
+                    Name = "בשר בקר טרי",
                     myProducts = { }
                 }
             );
@@ -109,6 +109,15 @@ namespace Katzavia.Data
                     myProducts = { }
                 }
             );
+
+            modelBuilder.Entity<Category>().HasData(
+              new Category
+              {
+                  Id = 4,
+                  Name = "מזווה",
+                  myProducts = { }
+              }
+          );
             modelBuilder.Entity<Product>().HasData(
                 new Product
                 {
@@ -345,6 +354,90 @@ namespace Katzavia.Data
                     CategoryId = 3
                 }
             );
+
+            modelBuilder.Entity<Product>().HasData(
+              new Product
+              {
+                  Id = 16,
+                  Name = "חרדל דיז'ון חלק",
+                  Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/a277f7fc-7b51-11eb-8ca8-aaf19c238eb9_______.014.jpeg",
+
+                  Price = 13.0,
+                  Desc = "חרדל דיז'ון צרפתי היישר מפריז הרחוקה",
+                  myTags = { },
+                  Category = { },
+                  CategoryId = 4
+              }
+        );
+
+
+
+            modelBuilder.Entity<Product>().HasData(
+                      new Product
+                      {
+                          Id = 17,
+                          Name = "מחית עגבניות",
+                          Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/136039ac-7b52-11eb-8d85-6ea0a7595342_______.020.jpeg",
+
+                          Price = 16.0,
+                          Desc = "מחית עגבניות מתקתק למנגל מושלם",
+                          myTags = { },
+                          Category = { },
+                          CategoryId = 4
+                      }
+                  );
+
+
+
+
+            modelBuilder.Entity<Product>().HasData(
+                      new Product
+                      {
+                          Id = 18,
+                          Name = "רוטב חריף סרירצ'ה",
+                          Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/69965ff4-7b52-11eb-9b3a-564c812693f5_______.024.jpeg",
+
+                          Price = 40.0,
+                          Desc = "רוטב חריף בסגנון מקסיקו",
+                          myTags = { },
+                          Category = { },
+                          CategoryId = 4
+                      }
+                  );
+
+
+
+            modelBuilder.Entity<Product>().HasData(
+                      new Product
+                      {
+                          Id = 19,
+                          Name = "לחמניות המבורגר",
+                          Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/7aba352e-7bf4-11eb-9865-e28c87392c16_hamburgerbun.001.jpeg",
+
+                          Price = 18.0,
+                          Desc = "לחמניות עגולות להמבורגר",
+                          myTags = { },
+                          Category = { },
+                          CategoryId = 4
+                      }
+                  );
+
+
+            modelBuilder.Entity<Product>().HasData(
+                      new Product
+                      {
+                          Id = 20,
+                          Name = "רוטב טבסקו",
+                          Image = "https://imageproxy.wolt.com/menu/menu-images/60338f3cb45f2aa1c48b443d/e4444560-7b50-11eb-9911-aaf19c238eb9_______.001.jpeg",
+
+                          Price = 17.0,
+                          Desc = "רוטב טבסקו חריף ומטריף",
+                          myTags = { },
+                          Category = { },
+                          CategoryId = 4
+                      }
+                  );
+
 
 
         }
