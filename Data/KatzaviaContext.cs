@@ -437,7 +437,32 @@ namespace Katzavia.Data
                           CategoryId = 4
                       }
                   );
+            modelBuilder.Entity<Tags>().HasData(
+            new Tags
+            {
+                Id = 21,
+                Name = "ביתי",
+                myProducts = { }
+            }
+        );
+            modelBuilder.Entity<Tags>().HasData(
+           new Tags
+           {
+               Id = 22,
+               Name = "יוקרתי",
+               myProducts = { }
+           }
+       );
 
+
+            modelBuilder.Entity<Tags>().HasData(
+       new Tags
+       {
+           Id = 23,
+           Name = "לא אנטיביוטי",
+           myProducts = { }
+       }
+   );
 
 
         }

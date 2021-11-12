@@ -1519,3 +1519,8 @@ C:\Users\dorva\Desktop\OurProject-master (2)\katzavia\katzavia\obj\Debug\net5.0\
 C:\Users\dorva\Desktop\OurProject-master (2)\katzavia\katzavia\obj\Debug\net5.0\ref\Katzavia.dll
 C:\Users\dorva\Desktop\OurProject-master (2)\katzavia\katzavia\obj\Debug\net5.0\Katzavia.pdb
 C:\Users\dorva\Desktop\OurProject-master (2)\katzavia\katzavia\obj\Debug\net5.0\Katzavia.genruntimeconfig.cache
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Create.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Delete.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Details.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Edit.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Index.cshtml.g.cs
