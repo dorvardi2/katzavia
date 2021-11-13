@@ -1,0 +1,1 @@
+﻿select Month(e.Date) as "חודש",count(*) as "כמות" from dbo.Events e group by Month(e.date);

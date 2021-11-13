@@ -466,5 +466,8 @@ namespace Katzavia.Data
 
 
         }
+
+
+        public DbSet<Katzavia.Models.Feedback> Feedback { get; set; }
     }
 }

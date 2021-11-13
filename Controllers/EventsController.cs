@@ -44,8 +44,10 @@ namespace Katzavia.Controllers
         }
 
         // GET: Events/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var temp = await _context.Events.ToListAsync();
+            ViewData["events"] = temp;
             return View();
         }
 

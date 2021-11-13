@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Create";
 }
-
 <br>
 <h1>Want to Schedule a special event with our Meat-men?</h1>
 
@@ -25,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Date" class="control-label"></label>
-                <input asp-for="Date" class="form-control" />
+                <input asp-for="Date" class="form-control" id="demo" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -50,5 +49,45 @@
 </div>
 
 @section Scripts {
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+
+
+    <script>
+        var todayDate = new Date();
+        var month = todayDate.getMonth() + 1;
+        var year = todayDate.getUTCFullYear() - 0;
+        var tdate = todayDate.getDate();
+        if (month < 10) {
+            month = "0" + month
+        }
+        if (tdate < 10) {
+            tdate = "0" + tdate;
+        }
+        var maxDate = year + "-" + month + "-" + tdate;
+        //document.getElementById("demo").setAttribute("min", maxDate);
+        //console.log(maxDate);
+        @{
+            var _events_data = ViewData["events"];
+            var a = 0;
+        }
+        var arra1y = JSON.parse('@Html.Raw(Json.Serialize(_events_data))')
+        var block_dates = arra1y.map(o => o.date?.split('T')[0])
+        console.log(arra1y)
+        var dateToday = new Date();
+        $('#demo').datepicker({
+            dateFormat: 'yy-mm-dd',
+            minDate: dateToday,
+            beforeShowDay: function (date) {
+                var string = jQuery.datepicker.formatDate('yy-mm-dd', date);
+                return [block_dates.indexOf(string) == -1]
+            }
+        }).on('click', function (event) {
+            event.preventDefault()
+        });
+    </script>
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

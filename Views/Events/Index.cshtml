@@ -57,3 +57,36 @@
 }
     </tbody>
 </table>
+
+
+<table class="table1">
+    <thead>
+        <tr>
+       
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                sum
+            </th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.GroupBy(p=> p.Date.Month))
+        {
+            <tr>
+                
+                <td>
+                    @item.Key
+                </td>
+               
+                <td>
+                    @item.Count()
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
