@@ -57,6 +57,21 @@ namespace Katzavia.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Katzavia.Models.Chef", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Chef");
+                });
+
             modelBuilder.Entity("Katzavia.Models.Events", b =>
                 {
                     b.Property<int>("Id")

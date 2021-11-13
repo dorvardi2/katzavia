@@ -469,5 +469,8 @@ namespace Katzavia.Data
 
 
         public DbSet<Katzavia.Models.Feedback> Feedback { get; set; }
+
+
+        public DbSet<Katzavia.Models.Chef> Chef { get; set; }
     }
 }
