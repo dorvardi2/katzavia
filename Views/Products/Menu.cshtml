@@ -20,7 +20,7 @@
             <input type="submit" value="Search" class="searchButton" />
         </form>
         <form asp-action="advSearch">
-            <input type="text" id="queryP" name="queryP" required min="0" placeholder="Advanced Search" />
+            <input type="text" id="queryP" name="queryP" required min="0" placeholder="Advanced Search - by name" />
 
             <select type="text" id="queryC" name="queryC" required>
                 <option value=""> Choose Category </option>
@@ -41,6 +41,35 @@
             </select>
             <input type="submit" value="Search" class="searchButton" />
         </form>
+
+        <form asp-action="advSearch2">
+            <input type="text" id="queryP" name="queryP" required min="0" placeholder="Advanced Search - by desc" />
+
+            <select type="text" id="queryC" name="queryC" required>
+                <option value=""> Choose Category </option>
+                <option value="עופות טריים"> עופות טריים </option>
+                <option value="בשר בקר טרי"> בשר בקר טרי </option>
+                <option value="קפואים"> קפואים </option>
+                <option value="מזווה"> מזווה </option>
+
+            </select>
+
+            <select type="text" id="queryM" name="queryM" required>
+                <option value=""> Minimum Price </option>
+                <option value="20"> 20 </option>
+                <option value="40"> 40 </option>
+                <option value="60"> 60 </option>
+                <option value="80"> 80 </option>
+                <option value="100"> 100 </option>
+                <option value="250"> 250 </option>
+            </select>
+            <input type="submit" value="Search" class="searchButton" />
+        </form>
+
+
+
+
+
     </div>
 </div>
 <div class="menu-btns">
@@ -55,26 +84,27 @@
     <tbody class="food-items">
         @foreach (var item in Model)
         {
-<tr>
-    <td>
-        <div class="container">
-            <div class="row">
-                <div id="productIdo" class="card text-center">
-                    <img src="@item.Image" width="100" />
-                </div>
-            </div>
-        </div>
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Name)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Price)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Desc)
-    </td>
-</tr>    }
+            <tr>
+                <td>
+                    <div class="container">
+                        <div class="row">
+                            <div id="productIdo" class="card text-center">
+                                <img src="@item.Image" width="100" />
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Desc)
+                </td>
+            </tr>
+       }
     </tbody>
 </table>
 <br />

@@ -42,11 +42,30 @@ namespace Katzavia.Controllers
         public async Task<IActionResult> advSearch(string queryP, string queryC, string queryM)
         {
             var KatzaviaContext = _context.Product.Include(a => a.Category).Where(a =>
-                                    (a.Name.Contains(queryP) || a.Desc.Contains(queryP))
+                                    (a.Name.Contains(queryP))
                                     && a.Category.Name.Equals(queryC)
                                     && a.Price <= (Int32.Parse(queryM)));
             return View("Menu", await KatzaviaContext.ToListAsync());
         }
+
+        public async Task<IActionResult> advSearch2(string queryP, string queryC, string queryM)
+        {
+            var KatzaviaContext = _context.Product.Include(a => a.Category).Where(a =>
+                                    (a.Desc.Contains(queryP))
+                                    && a.Category.Name.Equals(queryC)
+                                    && a.Price >= (Int32.Parse(queryM)));
+            return View("Menu", await KatzaviaContext.ToListAsync());
+        }
+
+
+
+
+
+
+
+
+
+
         public async Task<IActionResult> Buttom(string ctN)
         {
             var KatzaviaContext = _context.Product.Include(c => c.Category).Where(p => p.Category.Name.Equals(ctN) ||

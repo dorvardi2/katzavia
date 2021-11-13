@@ -1715,3 +1715,8 @@ C:\Users\dorva\Desktop\New folder\katzavia\obj\Debug\net5.0\Razor\Views\Feedback
 C:\Users\dorva\Desktop\New folder\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Edit.cshtml.g.cs
 C:\Users\dorva\Desktop\New folder\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Index.cshtml.g.cs
 C:\Users\dorva\Desktop\New folder\katzavia\obj\Debug\net5.0\Katzavia.csproj.AssemblyReference.cache
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Create.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Delete.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Details.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Edit.cshtml.g.cs
+C:\Users\Liel1010\Desktop\‏‏תיקיה חדשה (2)\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Index.cshtml.g.cs

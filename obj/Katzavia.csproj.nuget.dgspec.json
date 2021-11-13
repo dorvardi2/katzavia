@@ -1,20 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dorva\\Desktop\\New folder\\katzavia\\Katzavia.csproj": {}
+    "C:\\Users\\Liel1010\\Desktop\\‏‏תיקיה חדשה (2)\\katzavia\\Katzavia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dorva\\Desktop\\New folder\\katzavia\\Katzavia.csproj": {
+    "C:\\Users\\Liel1010\\Desktop\\‏‏תיקיה חדשה (2)\\katzavia\\Katzavia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dorva\\Desktop\\New folder\\katzavia\\Katzavia.csproj",
+        "projectUniqueName": "C:\\Users\\Liel1010\\Desktop\\‏‏תיקיה חדשה (2)\\katzavia\\Katzavia.csproj",
         "projectName": "Katzavia",
-        "projectPath": "C:\\Users\\dorva\\Desktop\\New folder\\katzavia\\Katzavia.csproj",
-        "packagesPath": "C:\\Users\\dorva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dorva\\Desktop\\New folder\\katzavia\\obj\\",
+        "projectPath": "C:\\Users\\Liel1010\\Desktop\\‏‏תיקיה חדשה (2)\\katzavia\\Katzavia.csproj",
+        "packagesPath": "C:\\Users\\Liel1010\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Liel1010\\Desktop\\‏‏תיקיה חדשה (2)\\katzavia\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\dorva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Liel1010\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
