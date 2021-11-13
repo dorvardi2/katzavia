@@ -27,8 +27,7 @@ namespace Katzavia.Models
         [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$",
                            ErrorMessage = "Entered phone format is not valid.")]
         public string Phone { get; set; }
-
-
+        public int cheff { get; set; }
         public string Desc { get; set; }
     }
 }

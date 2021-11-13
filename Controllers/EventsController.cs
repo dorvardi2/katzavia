@@ -56,7 +56,7 @@ namespace Katzavia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,EventType,Date,Phone,Desc")] Events events)
+        public async Task<IActionResult> Create([Bind("Id,Name,EventType,Date,Phone,cheff,Desc")] Events events)
         {
             if (ModelState.IsValid)
             {
