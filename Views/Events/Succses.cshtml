@@ -5,18 +5,20 @@
 }
 
 <br>
-<h1>Thank you about your ....</h1>
+<h1>
+    Thank you for your request <h1>
 
-<h1>you will....</h1>
+    <h1>
+        We will contact with you soon<h1>
 
-<script>
+        <script>
   setTimeout(function () {
         window.location.replace('@Url.Action("Index", "Home")')
     }, 4000);
 
-</script>
+        </script>
 
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
