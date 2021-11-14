@@ -2115,3 +2115,19 @@ C:\Users\Liel1010\Desktop\katzavia\obj\Debug\net5.0\Katzavia.dll
 C:\Users\Liel1010\Desktop\katzavia\obj\Debug\net5.0\ref\Katzavia.dll
 C:\Users\Liel1010\Desktop\katzavia\obj\Debug\net5.0\Katzavia.pdb
 C:\Users\Liel1010\Desktop\katzavia\obj\Debug\net5.0\Katzavia.genruntimeconfig.cache
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Chefs\Create.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Chefs\Delete.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Chefs\Details.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Chefs\Edit.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Chefs\Index.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Events\Succses.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Create.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Delete.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Details.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Edit.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Feedbacks\Index.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Create.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Delete.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Details.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Edit.cshtml.g.cs
+C:\Users\Eden Alon\Documents\GitHub\katzavia\obj\Debug\net5.0\Razor\Views\Tags\Index.cshtml.g.cs

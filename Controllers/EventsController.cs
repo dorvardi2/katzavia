@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Katzavia.Data;
 using Katzavia.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Katzavia.Controllers
 {

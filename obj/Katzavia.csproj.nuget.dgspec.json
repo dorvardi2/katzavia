@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eden\\Documents\\GitHub\\katzavia\\Katzavia.csproj": {}
+    "C:\\Users\\Eden Alon\\Documents\\GitHub\\katzavia\\Katzavia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eden\\Documents\\GitHub\\katzavia\\Katzavia.csproj": {
+    "C:\\Users\\Eden Alon\\Documents\\GitHub\\katzavia\\Katzavia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eden\\Documents\\GitHub\\katzavia\\Katzavia.csproj",
+        "projectUniqueName": "C:\\Users\\Eden Alon\\Documents\\GitHub\\katzavia\\Katzavia.csproj",
         "projectName": "Katzavia",
-        "projectPath": "C:\\Users\\Eden\\Documents\\GitHub\\katzavia\\Katzavia.csproj",
-        "packagesPath": "C:\\Users\\Eden\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eden\\Documents\\GitHub\\katzavia\\obj\\",
+        "projectPath": "C:\\Users\\Eden Alon\\Documents\\GitHub\\katzavia\\Katzavia.csproj",
+        "packagesPath": "C:\\Users\\Eden Alon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Eden Alon\\Documents\\GitHub\\katzavia\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Eden\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Eden Alon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
